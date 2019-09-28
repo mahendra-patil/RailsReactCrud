@@ -20,14 +20,20 @@ class Fruit extends React.Component{
   }
 
     render(){
-      let name = this.state.editable ? <input type='text' ref={input => this.name = input} defaultValue={this.props.fruit.name}/>:<h3>{this.props.fruit.name}</h3>
-      let description = this.state.editable ? <input type='text' ref={input => this.description = input} defaultValue={this.props.fruit.description}/>:<p>{this.props.fruit.description}</p>
+      let name = this.state.editable ? <input type='text' ref={input => this.name = input} defaultValue={this.props.fruit.name} class="form-control"/>:<h6>{this.props.fruit.name}</h6>
+      let description = this.state.editable ? <input type='text' ref={input => this.description = input} defaultValue={this.props.fruit.description} class="form-control" />:<p>{this.props.fruit.description}</p>
     return(
       <div>
-        {name}
-        {description}
-        <button onClick={() => this.handleEdit()}>{this.state.editable? 'Submit' : 'Edit'}</button>
-        <button onClick={() => this.props.handleDelete(this.props.fruit.id)}>Delete</button>
+        <table id='students'>
+          <tbody>
+            <tr>
+              <td>{name}</td>
+              <td>{description}</td>
+              <td><button onClick={() => this.handleEdit()}>{this.state.editable? 'Submit' : 'Edit'}</button></td>
+              <td><button onClick={() => this.props.handleDelete(this.props.fruit.id)}>Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     )
   }

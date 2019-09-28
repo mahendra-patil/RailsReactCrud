@@ -99,23 +99,16 @@ const AllFruits = (props) => {
         )
       })
     return(
-          <div>
+
+          <div class="all_fruits">
+            <table id='students'>
+              <th>
+                <td>Name</td>
+                <td>Description</td>
+                <td>Action</td>
+              </th>
+            </table>
             {fruits}
           </div>
         )
   }
-
-  // renderTableData() {
-  //   return this.state.fruits.map((fruits, index) => {
-  //      const { id, name,description} = fruits //destructuring
-  //      return (
-  //         <tr key={id}>
-  //            <td>{id}</td>
-  //            <td>{name}</td>
-  //            <td>{age}</td>
-  //            <td>{email}</td>
-  //         </tr>
-  //      )
-  //   })
-
-

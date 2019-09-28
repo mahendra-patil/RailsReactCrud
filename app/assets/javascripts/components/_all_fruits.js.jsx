@@ -17,7 +17,7 @@ class AllFruits extends React.Component {
     var fruits = this.state.fruits.map((fruit) => {
      return(
       <div key={fruit.id}>
-       <h1>{fruit.name}</h1>
+       <h6>{fruit.name}</h6>
        <p>{fruit.description}</p>
       </div>
      )

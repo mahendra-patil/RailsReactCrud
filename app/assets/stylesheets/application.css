@@ -53,3 +53,39 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
+
+#title {
+  text-align: left;
+  font-family: arial, sans-serif;
+}
+
+#students {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  width: 80%;
+}
+
+#students td, #students th {
+  border: 0.1px solid #ddd;
+  width: 50px;
+}
+
+#students tr:nth-child(even){background-color: #f2f2f2;}
+
+#students tr:hover {background-color: #ddd;}
+
+#students th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.all_fruits{
+  margin-top: 50px;
+}
